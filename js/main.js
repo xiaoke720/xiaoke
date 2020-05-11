@@ -43,4 +43,12 @@ $(document).ready(function() {
     }).mouseout(function(){
         $(this).hide();
     });
+
+
+    $('.closeBtn').click(function(){
+        $(this).parent().hide();
+    })
+
+
+
 });

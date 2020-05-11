@@ -300,7 +300,7 @@ iframe {
     width: 21rem;
     left: -14rem;
     padding:2rem;
-    display: block;
+    display: none;
     margin-top: 0;
 }
 .dropMenu-title{
