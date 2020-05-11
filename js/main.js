@@ -32,4 +32,15 @@ $(document).ready(function() {
         }
     })
 
+//点击购物车下拉
+    $(".shoppingDropD").mouseover(function(){
+        $(this).find(".dropdown-menu").show();
+    }).mouseout(function(){
+        $(this).find(".dropdown-menu").hide();
+    });
+    $(".dropdown-menu").mouseover(function(){
+        $(this).show();
+    }).mouseout(function(){
+        $(this).hide();
+    });
 });
