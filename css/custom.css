@@ -1,0 +1,45 @@
+.g-bg-gray{
+    background:#F6F7F8;
+}
+.g-bg-green{
+    background:rgba(139,192,88,1);
+}
+.g-bg-yellow{
+    background: #F5B41A;
+}
+.g-bg-white--hover:hover a{
+    background: transparent;
+}
+.g-color-green{
+    color:#8BC058;
+}
+.g-bg-blue{
+    background: #dee8f0;
+}
+.g-bg-red{
+    background: #ED7B5A;
+}
+.g-bg-red-1{
+    background: #FFF8E7;
+}
+.g-bg-gray-f6{
+    background: #F6F6F6;
+}
+.g-bg-white{
+    background: #fff;
+}
+.g-color-gray-dark-eoeoeo{
+    color:#e0e0e0;
+}
+.g-bg-transparent{
+    background: transparent;
+}
+.g-bg-FFB914{
+    background: #FFB914;
+}
+.g-color-1C1C1C{
+    color:#1c1c1c;
+}
+.btn-success-8BC058{
+    background: #8BC058;
+}
