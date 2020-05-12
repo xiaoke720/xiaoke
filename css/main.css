@@ -36,6 +36,7 @@ body {
     font-weight:400;
     color:#666;
     line-height:26px;
+    overflow-x: hidden;
 }
 .g-font-family-Regular{
     font-family: NotoSansHans-Regular;
@@ -298,10 +299,16 @@ iframe {
 
 .shoppingDropD .dropdown-menu{
     width: 21rem;
-    left: -14rem;
+    left: -15rem;
     padding:2rem;
     display: none;
     margin-top: 0;
+}
+
+@media (max-width: 700px) {
+    .shoppingDropD .dropdown-menu{
+        left: -7.23rem;
+    }
 }
 .dropMenu-title{
     padding-bottom: 5px;
@@ -309,6 +316,9 @@ iframe {
 }
 .dropMenu-content>li{
     padding-top:1.5rem;
+}
+.header-info .navbar-collapse.in{
+    overflow-y:visible;
 }
 .miniCartInfo .miniCart-left{
     display: inline-block;
@@ -365,6 +375,7 @@ iframe {
     .typicalCase-bg .img_wap{
         display: none;
     }
+
 }
 .header-info .navbar-light .navbar-toggler{
     outline: none;
@@ -664,6 +675,34 @@ li.breadcrumb-item + .breadcrumb-item::before{
 .form-check-again input{
     margin: 0.2rem 5px 0 0;
 }
+.userShopping .search-formT{
+    position: relative;
+}
+.search-formT .search-form-input{
+     width: 20px;
+     padding: 5px 0;
+     border: none;
+     border-radius: 4px;
+     /*background-color: rgba(244,243,248,1);*/
+     font-family: "Open Sans",sans-serif;
+     font-size: 13px;
+    text-indent: 10px;
+     cursor: pointer;
+     -webkit-transition: width 500ms ease,background 400ms ease;
+     transition: width 500ms ease,background 400ms ease;
+     z-index: 9;
+    background: url("../images/鎼滅储 (1).png") no-repeat 95% 50%;
+    background-size: 20px 20px;
+    cursor: pointer;
+ }
+.userShopping .search-formT .search-form-input:focus{
+    width: 150px;
+    outline: 0;
+    background-color: #fff;
+    cursor: text;
+    background-color: rgba(244,243,248,1);
+}
+
 /*------------------------------------
   custom
 ------------------------------------*/
@@ -1384,6 +1423,28 @@ textarea.g-height-200{
     -ms-transform: translate(-50%,-50%);
     transform: perspective(1px) translate(-50%,-50%);
 }
+@media (max-width: 1200px) {
+    .header-nav>li{
+        padding: 0.5rem 1.3rem;
+    }
+}
+@media (max-width: 1005px) {
+    .header-nav>li{
+        padding: 0.5rem 0.8rem;
+    }
+    .g-mx-32-sm{
+        margin: 0 2rem !important;
+    }
+}
+@media (min-width: 768px) and (max-width: 1000px){
+    .header-nav>li{
+        padding: 0.5rem 0.5rem;
+    }
+    .g-mx-32-sm{
+        margin: 0 1rem !important;
+    }
+}
+
 @media (max-width: 767px) {
     #carousel-example-generic11 .carousel-inner > .item{
         height: 300px;
