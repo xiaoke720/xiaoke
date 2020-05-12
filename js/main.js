@@ -44,7 +44,7 @@ $(document).ready(function() {
         $(this).hide();
     });
 
-    
+
     //计算总价与小计
     function prodC() {
         var $tr = $(".dropMenu-content").find("li");
@@ -95,6 +95,12 @@ $(document).ready(function() {
         $(this).parent().remove(); //删除当前tr
         prodC();
     });
+
+
+
+
+
+
 
 
 });
