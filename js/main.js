@@ -33,16 +33,16 @@ $(document).ready(function() {
     })
 
 //点击购物车下拉
-    $(".shoppingDropD").mouseover(function(){
-        $(this).find(".dropdown-menu").show();
-    }).mouseout(function(){
-        $(this).find(".dropdown-menu").hide();
-    });
-    $(".dropdown-menu").mouseover(function(){
-        $(this).show();
-    }).mouseout(function(){
-        $(this).hide();
-    });
+//    $(".shoppingDropD").mouseover(function(){
+//        $(this).find(".dropdown-menu").show();
+//    }).mouseout(function(){
+//        $(this).find(".dropdown-menu").hide();
+//    });
+//    $(".dropdown-menu").mouseover(function(){
+//        $(this).show();
+//    }).mouseout(function(){
+//        $(this).hide();
+//    });
 
 
 //    //计算总价与小计
@@ -140,16 +140,80 @@ $(document).ready(function() {
 
 
 
-    var btnCar = document.querySelectorAll('.cardInfo .img_wap');
-    console.log(btnCar);
+    var btnCar = document.querySelectorAll('.shoppingBtn');
+    //console.log(btnCar[0]);
+    // 载入所有存储在localStorage的数据
+    loadAll();
+    for (let i = 0; i < btnCar.length; i++) {
+        btnCar[i].onclick = function () {
+            //console.log("ok");
+            var productImg = document.getElementsByClassName('productImg')[i].src;
+            console.log(productImg);
+            var goods = document.getElementsByClassName('productName')[i].innerHTML;
+            console.log(goods);
+            var price = document.getElementsByClassName('productPrice')[i].innerHTML;
+            console.log(price);
+            localStorage.setItem('img',productImg);
+            localStorage.setItem('price',price);
+            localStorage.setItem('goods',goods);
+            loadAll();
+        }
+    }
+
+    function loadAll() {
+        var list = document.getElementById("shoppingList");
+        if (localStorage.length > 0) {
+            //var result = "<table border='1'>";
+            //result += "<tr><th>商品</th><th>价格</th><th>操作</th></tr>";
+            for (var i = 0; i < localStorage.length; i++) {
+                var price = localStorage.getItem("price");
+                var goods = localStorage.getItem("goods");
+                var productImg = localStorage.getItem('img');
+                console.log(productImg)
+                //result += "<tr><td>" + goods + "</td><t-d>" + price + "</td>" +
+                //    "<td><a href='javascript:;' id='del'>X</a></td></tr>";
+                result=
+                    '<li>'+
+                        '<button type="button" class="close closeBtn" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                        '<div class="clearfix"></div>'+
+                        '<article class="clearfix miniCartInfo">'+
+                            '<div class="miniCart-left"><img src="'+productImg+'" alt="" /></div>'+
+                            '<div class="miniCart-right">' +
+                                 '<h4 class="card-title g-font-family-Regular g-line-height-21"><a href="">'+goods+'</a></h4>'+
+                                 '<div class="priceAndNumber g-mt-15">' +
+                                     '<h3 class="g-font-size-18 g-font-family-bold pull-left">'+price+'</h3>'+
+                                     '<div class="input-group-add pull-right text-center">'+
+                                         '<a class="jianshao" href="javascript:void(0)" href="">-</a>'+
+                                         '<span type="text" class="text-center g-color-gray-dark-v4 two g-font-size-12 number" placeholder="1" aria-describedby="sizing-addon2">1</span>'+
+                                         '<a class="add1" href="javascript:void(0)">+</a>'+
+                                     '</div>'+
+                                '</div>'+
+                            '</div>'+
+                        '</article>'+
+                     '</li>';
+            }
+
+            list.innerHTML = result;
+        } else {
+            list.innerHTML = "购物车空空如也哦……";
+        }
+
+    }
 
 
-
-
-
-
-
-
+    // for循环删除购物车商品
+    let del = document.querySelectorAll('.closeBtn');
+    for (let i = 0; i < del.length; i++) {
+        del[i].onclick = function () {
+            var val = del[i].parentNode;
+            var children1 = val.innerText;
+            //var children2 = val.children[1].innerText;
+            localStorage.removeItem(children1);
+             localStorage.clear();
+            loadAll();
+        }
+    }
 
 
 });
+
