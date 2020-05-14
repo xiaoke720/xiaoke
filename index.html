@@ -13,666 +13,683 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/custom.css">
+    <script src="js/jquery.min.js"></script>
+
+
+
+
 </head>
 <body>
-    <header class="header-info">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light">
-                <a class="navbar-brand" href="index.html">
-                    <img src="images/WechatIMG1.png" alt=""/>
-                </a>
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
+<header class="header-info">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/WechatIMG1.png" alt=""/>
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarSupportedContent" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
 
-                <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
-                    <div class="flex-lg-grow-1">
-                        <ul class="navbar-nav header-nav justify-content-center">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">首頁</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="product.html">產品</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="aboutUs.html">關於我們</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="newInformation.html">最新資訊</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="chatUs.html">聯絡我們</a>
-                            </li>
-                        </ul>
-                    </div>
+            <div class="collapse navbar-collapse d-lg-flex" id="navbarSupportedContent">
+                <div class="flex-lg-grow-1">
+                    <ul class="navbar-nav header-nav justify-content-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">首頁</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="product.html">產品</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="aboutUs.html">關於我們</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="newInformation.html">最新資訊</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="chatUs.html">聯絡我們</a>
+                        </li>
+                    </ul>
+                </div>
 
-                    <div class="userShopping">
-                        <a class="one" href="login.html"><img src="images/涓汉 (2).png" alt=""/></a>
-                        <!--<a class="two g-mx-44" href="login.html">-->
-                            <!--<img src="images/购物车 (3).png" alt=""/>-->
-                            <!--<span class="number ">2</span>-->
-                        <!--</a>-->
-                        <div class="dropdown shoppingDropD">
-                            <a href="" class="dropdown-toggle two g-mx-44 g-mx-32-sm" type="button" id="cartDropdown">
-                                <img src="images/购物车 (3).png" alt=""/>
-                                <span class="number" id="number">2</span>
-                            </a>
-                            <div class="dropdown-menu">
-                                <div class="dropMenu-title">
-                                    <h4 class="mini-cart-title">購物車</h4>
-                                </div>
-                                <ul class="dropMenu-content"  id="shoppingList">
-                                    <!--<li>-->
-                                        <!--<button type="button" class="close closeBtn" aria-label="Close"><span aria-hidden="true">&times;</span></button>-->
-                                        <!--<div class="clearfix"></div>-->
-                                        <!--<article class="clearfix miniCartInfo">-->
-                                            <!--<div class="miniCart-left">-->
-                                                <!--<img src="images/aboutus.png" alt=""/>-->
-                                            <!--</div>-->
-                                            <!--<div class="miniCart-right">-->
-                                                <!--<h4 class="card-title g-font-family-Regular g-line-height-21">-->
-                                                    <!--<a href="">雙重口感桃膠+雪燕燉(2合1)</a>-->
-                                                <!--</h4>-->
-                                                <!--<div class="priceAndNumber g-mt-15">-->
-                                                    <!--<h3 class="g-font-size-18 g-font-family-bold pull-left">300.00</h3>-->
-                                                    <!--<div class="input-group-add pull-right text-center">-->
-                                                        <!--<a class="jianshao" href="javascript:void(0)" href="">-</a>-->
-                                                        <!--<span type="text" class="text-center g-color-gray-dark-v4 two g-font-size-12 number" placeholder="1" aria-describedby="sizing-addon2">1</span>-->
-                                                         <!--<a class="add1" href="javascript:void(0)">+</a>-->
-                                                    <!--</div>-->
-                                                <!--</div>-->
-                                            <!--</div>-->
-                                        <!--</article>-->
-                                    <!--</li>-->
-                                </ul>
-                                <p class="cartCount g-font-size-18">小計 <span class="g-font-family-bold g-color-gray-dark-v2 g-pl-10">$300.00</span></p>
-                                <div class="clearfix text-center">
-                                    <button type="button" class="btn g-font-size-14 g-bg-green g-text-white">查看總計</button>
-                                    <button type="button" class="btn g-font-size-14">結賬</button>
-                                </div>
+                <div class="userShopping">
+                    <a class="one" href="login.html"><img src="images/涓汉 (2).png" alt=""/></a>
+                    <!--<a class="two g-mx-44" href="login.html">-->
+                    <!--<img src="images/购物车 (3).png" alt=""/>-->
+                    <!--<span class="number ">2</span>-->
+                    <!--</a>-->
+                    <div class="dropdown shoppingDropD">
+                        <a href="" class="dropdown-toggle two g-mx-44 g-mx-32-sm" type="button" id="cartDropdown">
+                            <img src="images/购物车 (3).png" alt=""/>
+                            <span class="number" id="number">0</span>
+                        </a>
+                        <div class="dropdown-menu">
+                            <div class="dropMenu-title">
+                                <h4 class="mini-cart-title">購物車</h4>
                             </div>
-                            <div class="haha"></div>
+                            <div  id="shoppingList">
+                                <!--<ul class="dropMenu-content">-->
+                                <!--<li>-->
+                                <!--<button type="button" class="close closeBtn" aria-label="Close"><span-->
+                                <!--aria-hidden="true">&times;</span></button>-->
+                                <!--<div class="clearfix"></div>-->
+                                <!--<article class="clearfix miniCartInfo">-->
+                                <!--<div class="miniCart-left">-->
+                                <!--<img src="images/aboutus.png" alt=""/>-->
+                                <!--</div>-->
+                                <!--<div class="miniCart-right">-->
+                                <!--<h4 class="card-title g-font-family-Regular g-line-height-21">-->
+                                <!--<a href="">雙重口感桃膠+雪燕燉(2合1)</a>-->
+                                <!--</h4>-->
+
+                                <!--<div class="priceAndNumber g-mt-15">-->
+                                <!--<h3 class="g-font-size-18 g-font-family-bold pull-left">-->
+                                <!--300.00</h3>-->
+
+                                <!--<div class="input-group-add pull-right text-center">-->
+                                <!--<a class="jianshao" href="javascript:void(0)" href="">-</a>-->
+                                <!--<span type="text"-->
+                                <!--class="text-center g-color-gray-dark-v4 two g-font-size-12 number"-->
+                                <!--placeholder="1"-->
+                                <!--aria-describedby="sizing-addon2">1</span>-->
+                                <!--<a class="add1" href="javascript:void(0)">+</a>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--</div>-->
+                                <!--</article>-->
+                                <!--</li>-->
+                                <!--</ul>-->
+                            </div>
+
+
+
+                            <p class="cartCount g-font-size-18">小計 <span class="g-font-family-bold g-color-gray-dark-v2 g-pl-10">$300.00</span></p>
+                            <div class="clearfix text-center">
+                                <button type="button" class="btn g-font-size-14 g-bg-green g-text-white">查看總計</button>
+                                <button type="button" class="btn g-font-size-14">結賬</button>
+                            </div>
                         </div>
-                        <!--<a class="one" href=""><img src="images/鎼滅储 (1).png" alt=""/></a>-->
+                        <div class="haha"></div>
+                    </div>
+                    <!--<a class="one" href=""><img src="images/鎼滅储 (1).png" alt=""/></a>-->
 
 
                         <span class="search-formT one" method="get" action="" role="search">
                             <input class="search-form-input" type="search" name="s" id="searchform-1" placeholder="搜尋產品...">
                         </span>
 
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </header>
-
-    <div class="g-bg-blue g-py-146">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6 col-md-7">
-                    <img class="img-fluid g-w-100 g-height-100" src="images/bannerPic.jpg" alt=""/>
-                </div>
-                <div class="col-sm-6 col-md-5">
-                    <div class="banner-info">
-                        <h1 class="g-font-family-Medium">歡迎來到啖啖燕窩網上自助下單網址</h1>
-                        <p class="g-font-size-16 g-color-gray-dark-v6 g-font-family-light loginMember g-margin-bottom-0">*需先做按Fackbook登入做會員*</p>
-                        <p class="g-font-size-14 g-pt-27 g-color-gray-dark-vab g-margin-bottom-0">最新推出</p>
-                        <h2 class="g-font-size-20 g-color-gray-dark-v6 NotoSansHans-Regular">特濃牛奶水果燕窩</h2>
-                        <div class="starIcon starIconT">
-                            <img class="d-inline-block" src="images/Star 1.png" alt="">
-                            <img class="d-inline-block" src="images/Star 1.png" alt="">
-                            <img class="d-inline-block" src="images/Star 1.png" alt="">
-                            <img class="d-inline-block" src="images/Star 1.png" alt="">
-                            <img class="d-inline-block" src="images/Star 4.png" alt="">
-                            <span class="g-font-size-16 g-color-gray-dark-v7 g-margin-left-16">4.1</span>
-                        </div>
-                        <button type="button" class="btn g-font-size-14 g-bg-green g-text-white g-font-family-bold">自主下單</button>
                 </div>
             </div>
-        </div>
+        </nav>
     </div>
-    </div>
+</header>
 
-    <div class="container g-mt-68">
+<div class="g-bg-blue g-py-146">
+    <div class="container">
         <div class="row">
-            <div class="col-md-6 g-mb-30">
-                <div class="row g-rounded g-bg-gray g-mx-1">
-                    <div class="col-sm-6 g-pt-24 g-pl-43 g-pm-37 g-pr-28 g-font-size-15 indexPaddingInfo">
-                        <p class="g-margin-bottom-0">
-                            即日送上門服務，需存放雪櫃，打開可即食，超級方便，廣受好評.可接受PAYME銀行入數FPS轉數快Paypal P2P
-                        </p>
-                        <p class="g-margin-bottom-0">
-                            此網頁的營運時間: 10:30AM-5PM於此時間以外只會作出有限度回覆，請多多包涵
-                        </p>
-                        <p class="g-margin-bottom-0">
-                            按照下邊流程落單就可以啦^
-                        </p>
-                        <button type="button" class="btn g-mt-15 g-bg-green g-font-size-14 g-width-94 g-height-32 g-text-white">溫馨提示</button>
+            <div class="col-sm-6 col-md-7">
+                <img class="img-fluid g-w-100 g-height-100" src="images/bannerPic.jpg" alt=""/>
+            </div>
+            <div class="col-sm-6 col-md-5">
+                <div class="banner-info">
+                    <h1 class="g-font-family-Medium">歡迎來到啖啖燕窩網上自助下單網址</h1>
+                    <p class="g-font-size-16 g-color-gray-dark-v6 g-font-family-light loginMember g-margin-bottom-0">*需先做按Fackbook登入做會員*</p>
+                    <p class="g-font-size-14 g-pt-27 g-color-gray-dark-vab g-margin-bottom-0">最新推出</p>
+                    <h2 class="g-font-size-20 g-color-gray-dark-v6 NotoSansHans-Regular">特濃牛奶水果燕窩</h2>
+                    <div class="starIcon starIconT">
+                        <img class="d-inline-block" src="images/Star 1.png" alt="">
+                        <img class="d-inline-block" src="images/Star 1.png" alt="">
+                        <img class="d-inline-block" src="images/Star 1.png" alt="">
+                        <img class="d-inline-block" src="images/Star 1.png" alt="">
+                        <img class="d-inline-block" src="images/Star 4.png" alt="">
+                        <span class="g-font-size-16 g-color-gray-dark-v7 g-margin-left-16">4.1</span>
                     </div>
-                    <div class="col-sm-6 g-px-0">
-                        <div class="caseContent">
-                            <img class="g-w-100 img-responsive" src="images/QQ鎴浘20190524103747.png" alt="First slide">
-                        </div>
+                    <button type="button" class="btn g-font-size-14 g-bg-green g-text-white g-font-family-bold">自主下單</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container g-mt-68">
+    <div class="row">
+        <div class="col-md-6 g-mb-30">
+            <div class="row g-rounded g-bg-gray g-mx-1">
+                <div class="col-sm-6 g-pt-24 g-pl-43 g-pm-37 g-pr-28 g-font-size-15 indexPaddingInfo">
+                    <p class="g-margin-bottom-0">
+                        即日送上門服務，需存放雪櫃，打開可即食，超級方便，廣受好評.可接受PAYME銀行入數FPS轉數快Paypal P2P
+                    </p>
+                    <p class="g-margin-bottom-0">
+                        此網頁的營運時間: 10:30AM-5PM於此時間以外只會作出有限度回覆，請多多包涵
+                    </p>
+                    <p class="g-margin-bottom-0">
+                        按照下邊流程落單就可以啦^
+                    </p>
+                    <button type="button" class="btn g-mt-15 g-bg-green g-font-size-14 g-width-94 g-height-32 g-text-white">溫馨提示</button>
+                </div>
+                <div class="col-sm-6 g-px-0">
+                    <div class="caseContent">
+                        <img class="g-w-100 img-responsive" src="images/QQ鎴浘20190524103747.png" alt="First slide">
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="row g-rounded g-bg-gray g-mx-1">
-                    <div class="col-sm-5 col-12">
-                        <div class="g-px-28 g-pt-55 g-pb-37 indexPaddingInfo">
-                            <h2 class="mb-4 g-color-gray-dark-4e">椰子燉燕窩</h2>
-                            <ul class="circleIcon g-color-gray-dark-4e g-my-24">
-                                <li><i class="fa fa-dot-circle-o " aria-hidden="true"></i> <span>需提早1天預約</span></li>
-                                <li><i class="fa fa-circle-o" aria-hidden="true"></i> <span>-樽免費即日送貨到九龍區</span></li>
-                            </ul>
-                            <button type="button" class="btn mt-4 g-font-size-14 g-width-94 g-height-32 g-text-white g-bg-red">立即下單</button>
-                        </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-rounded g-bg-gray g-mx-1">
+                <div class="col-sm-5 col-12">
+                    <div class="g-px-28 g-pt-55 g-pb-37 indexPaddingInfo">
+                        <h2 class="mb-4 g-color-gray-dark-4e">椰子燉燕窩</h2>
+                        <ul class="circleIcon g-color-gray-dark-4e g-my-24">
+                            <li><i class="fa fa-dot-circle-o " aria-hidden="true"></i> <span>需提早1天預約</span></li>
+                            <li><i class="fa fa-circle-o" aria-hidden="true"></i> <span>-樽免費即日送貨到九龍區</span></li>
+                        </ul>
+                        <button type="button" class="btn mt-4 g-font-size-14 g-width-94 g-height-32 g-text-white g-bg-red">立即下單</button>
                     </div>
-                    <div class="col-sm-7 col-12 g-px-0">
-                        <div class="caseContent">
-                            <img class="g-w-100 img-responsive card-img-top figure-img d-block g-rounded-right" src="images/pli-img02.png" alt="First slide">
-                        </div>
+                </div>
+                <div class="col-sm-7 col-12 g-px-0">
+                    <div class="caseContent">
+                        <img class="g-w-100 img-responsive card-img-top figure-img d-block g-rounded-right" src="images/pli-img02.png" alt="First slide">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
+<div class="container">
+    <div id="carouselExampleControls1" class="carousel slide g-my-110" data-ride="carousel">
+        <div class="careChoose g-mb-40">
+            <h3 class="g-mb-0 pull-left g-font-size-22 g-color-gray-dark-v2">人氣精選</h3>
+            <div class="pull-right">
+                <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls1" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control-next text-center" href="#carouselExampleControls1" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-60">
+                        <div class="cardInfo"  data-id="1">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-height-20 g-font-family-Regular"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a class="shoppingBtn" href="javascript:void(0)"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-60">
+                        <div class="cardInfo"  data-id="2">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 16.png" alt="First slide">
+                            </a>
+
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-60">
+                        <div class="cardInfo"  data-id="3">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 17.png" alt="First slide">
+                            </a>
+
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-60">
+                        <div class="cardInfo"  data-id="4">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 18.png" alt="First slide">
+                            </a>
+
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo"  data-id="5">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title  g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo"  data-id="6">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 26.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo"  data-id="7">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 20.png" alt="First slide">
+                            </a>
+
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo"  data-id="8">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 21.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <div class="starIcon">
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 1.png" alt=""/>
+                                    <img class="d-inline-block" src="images/Star 4.png" alt=""/>
+                                </div>
+                                <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="g-bg-gray g-py-60">
     <div class="container">
-        <div id="carouselExampleControls1" class="carousel slide g-my-110" data-ride="carousel">
-            <div class="careChoose g-mb-40">
-                <h3 class="g-mb-0 pull-left g-font-size-22 g-color-gray-dark-v2">人氣精選</h3>
-                <div class="pull-right">
-                    <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls1" role="button" data-slide="prev">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </a>
-                    <a class="carousel-control-next text-center" href="#carouselExampleControls1" role="button" data-slide="next">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="cardProcess g-bg-white">
+                    <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
+                        <h2 class="card-title g-mb-14 g-font-size-22">購買流程:</h2>
+                        <ul class="g-font-size-15">
+                            <li>1.將心儀產品放進購物車</li>
+                            <li>2.按訂單結帳</li>
+                            <li>3.先按會員登入. [使用Facebook登入]</li>
+                            <li>4.只需選擇付款方式</li>
+                            <li>
+                                5. PAYME銀行入數FPS轉數快Paypal P2P
+                                (付款完成然後把入數紙傳回給我們就OK)
+                                (一般收到電話後1- 4.5小時內可送到上門)
+                            </li>
+                            <li>6.取貨，打開蓋，即食^_ NYEAH</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="clearfix"></div>
             </div>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-60">
-                            <div class="cardInfo"  pid="0">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-height-20 g-font-family-Regular"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a class="shoppingBtn" href="javascript:void(0)"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-60">
-                            <div class="cardInfo" pid="1">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 16.png" alt="First slide">
-                                </a>
-
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-60">
-                            <div class="cardInfo" pid="2">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 17.png" alt="First slide">
-                                </a>
-
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-60">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 18.png" alt="First slide">
-                                </a>
-
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title  g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 26.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 20.png" alt="First slide">
-                                </a>
-
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0 productImg" src="images/pli-img01澶囦唤 21.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <div class="starIcon">
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 1.png" alt=""/>
-                                        <img class="d-inline-block" src="images/Star 4.png" alt=""/>
-                                    </div>
-                                    <h4 class="card-title g-font-family-Regular"><a class="productName" href="javascript:void(0)" >爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
+            <div class="col-md-4 col-12">
+                <div class="cardProcess g-bg-white">
+                    <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
+                        <h2 class="card-title g-mb-14 g-font-size-22">注意:</h2>
+                        <ul class="itemTxt">
+                            <li>如荃灣葵涌，將軍澳寶琳等等，送貨公司設定為新界區;</li>
+                            <li>網上自助下單下單成功後，會2-10分鐘內收 到確認電話，收到電話後會於1-4.5小時內送 到上門;</li>
+                            <li>(暫不支援貨到付款)</li>
+                        </ul>
                     </div>
                 </div>
-
             </div>
-
-        </div>
-    </div>
-
-    <div class="g-bg-gray g-py-60">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-12">
-                    <div class="cardProcess g-bg-white">
-                        <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
-                            <h2 class="card-title g-mb-14 g-font-size-22">購買流程:</h2>
-                            <ul class="g-font-size-15">
-                                <li>1.將心儀產品放進購物車</li>
-                                <li>2.按訂單結帳</li>
-                                <li>3.先按會員登入. [使用Facebook登入]</li>
-                                <li>4.只需選擇付款方式</li>
-                                <li>
-                                    5. PAYME銀行入數FPS轉數快Paypal P2P
-                                    (付款完成然後把入數紙傳回給我們就OK)
-                                    (一般收到電話後1- 4.5小時內可送到上門)
-                                </li>
-                                <li>6.取貨，打開蓋，即食^_ NYEAH</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="cardProcess g-bg-white">
-                        <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
-                            <h2 class="card-title g-mb-14 g-font-size-22">注意:</h2>
-                            <ul class="itemTxt">
-                                <li>如荃灣葵涌，將軍澳寶琳等等，送貨公司設定為新界區;</li>
-                                <li>網上自助下單下單成功後，會2-10分鐘內收 到確認電話，收到電話後會於1-4.5小時內送 到上門;</li>
-                                <li>(暫不支援貨到付款)</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-12">
-                    <div class="cardProcess g-bg-white">
-                        <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
-                            <h2 class="card-title g-mb-14 g-font-size-22">不送貨範圍::</h2>
-                            <ul class="itemTxt">
-                                <li>偏遠地區(例如落馬洲，愉景灣，馬灣，機場，村屋等等) ;</li>
-                                <li>如果有任何問題可即時致電或Whatsapp54824802查詢喔</li>
-                            </ul>
-                        </div>
+            <div class="col-md-4 col-12">
+                <div class="cardProcess g-bg-white">
+                    <div class="card-body g-px-32 g-py-36 g-max-heigh-292">
+                        <h2 class="card-title g-mb-14 g-font-size-22">不送貨範圍::</h2>
+                        <ul class="itemTxt">
+                            <li>偏遠地區(例如落馬洲，愉景灣，馬灣，機場，村屋等等) ;</li>
+                            <li>如果有任何問題可即時致電或Whatsapp54824802查詢喔</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
+<div class="container">
+    <div id="carouselExampleControls2" class="carousel slide g-my-110" data-ride="carousel">
+        <div class="careChoose g-mb-40">
+            <h3 class="pull-left g-font-size-22 g-color-gray-dark-v2">最新產品</h3>
+            <div class="pull-right">
+                <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls2" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control-next text-center" href="#carouselExampleControls2" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 22.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">明治特濃4.3牛奶燉燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$400.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 17.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">雙重口感桃膠+雪燕燉(2合1)</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="row">
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 22.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">明治特濃4.3牛奶燉燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$400.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 17.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">雙重口感桃膠+雪燕燉(2合1)</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
+                                <div class="newIcon text-center">新</div>
+                            </a>
+                            <div class="card-body text-center pt-2 g-pb-35 g-px-16">
+                                <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
+                                    <a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+<div class="g-bg-gray">
     <div class="container">
-            <div id="carouselExampleControls2" class="carousel slide g-my-110" data-ride="carousel">
-                <div class="careChoose g-mb-40">
-                    <h3 class="pull-left g-font-size-22 g-color-gray-dark-v2">最新產品</h3>
-                    <div class="pull-right">
-                        <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls2" role="button" data-slide="prev">
-                            <i class="fa fa-angle-left" aria-hidden="true"></i>
-                        </a>
-                        <a class="carousel-control-next text-center" href="#carouselExampleControls2" role="button" data-slide="next">
-                            <i class="fa fa-angle-right" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                    <div class="clearfix"></div>
-                </div>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="row">
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 22.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">明治特濃4.3牛奶燉燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$400.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 17.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">雙重口感桃膠+雪燕燉(2合1)</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="row">
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 22.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">明治特濃4.3牛奶燉燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$400.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 17.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">雙重口感桃膠+雪燕燉(2合1)</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                                <div class="cardInfo">
-                                    <a class="img_wap" href="">
-                                        <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
-                                        <div class="newIcon text-center">新</div>
-                                    </a>
-                                    <div class="card-body text-center pt-2 g-pb-35 g-px-16">
-                                        <h4 class="card-title mt-4 mb-2 g-height-20 overflow-hidden g-font-family-Regular g-mt-30">
-                                            <a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                        <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                        <a href="javascript:void(0)" class="shoppingBtn pb-2 px-5"><img class="d-inline-block" src="images/blackShopping.png" alt=""></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+        <div class="row g-py-106">
+            <div class="col-sm-6">
+                <div class="card bg-transparent">
+                    <div class="card-body text-color g-pr-60--md">
+                        <h2 class="card-title g-font-size-30 g-line-height-40 g-mb-16">啖啖燕窩用什麼燕窩?</h2>
+                        <p class="card-text g-font-size-18 g-line-height-40 g-margin-bottom-0">我們是探用印尼原集燕窝盞，新鮮燉裝「所有燕窩」，大小約為市面上的3A- 4A Size,最重要是完全沒有塗膠水，不經漂白，原汁原味。</p>
+                        <ul class="g-font-size-18 g-line-height-38 g-mt-14 g-mb-30">
+                            <li>● 700ML燕窩 大約2-3集原盞燕窩</li>
+                            <li>● 1060ML燕窩 大約3-4售原盞燕窩</li>
+                        </ul>
+                        <p class="g-font-size-16">
+                            Ps:如果想買但又唔識買燕窩盞，可直接Whatsapp我們，並有送貨上門服務.啖啖燕窩「乾貨區」
+                        </p>
+                        <p class="g-font-size-16">https://www.facebook.com/damdambirdnest/</p>
                     </div>
                 </div>
-
             </div>
-
-
-        </div>
-
-    <div class="g-bg-gray">
-        <div class="container">
-            <div class="row g-py-106">
-                <div class="col-sm-6">
-                    <div class="card bg-transparent">
-                        <div class="card-body text-color g-pr-60--md">
-                            <h2 class="card-title g-font-size-30 g-line-height-40 g-mb-16">啖啖燕窩用什麼燕窩?</h2>
-                            <p class="card-text g-font-size-18 g-line-height-40 g-margin-bottom-0">我們是探用印尼原集燕窝盞，新鮮燉裝「所有燕窩」，大小約為市面上的3A- 4A Size,最重要是完全沒有塗膠水，不經漂白，原汁原味。</p>
-                            <ul class="g-font-size-18 g-line-height-38 g-mt-14 g-mb-30">
-                                <li>● 700ML燕窩 大約2-3集原盞燕窩</li>
-                                <li>● 1060ML燕窩 大約3-4售原盞燕窩</li>
-                            </ul>
-                            <p class="g-font-size-16">
-                                Ps:如果想買但又唔識買燕窩盞，可直接Whatsapp我們，並有送貨上門服務.啖啖燕窩「乾貨區」
-                            </p>
-                            <p class="g-font-size-16">https://www.facebook.com/damdambirdnest/</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6">
-                      <img class="img-responsive g-w-100" src="images/pli-img01澶囦唤 17.png" alt="First slide">
-                </div>
+            <div class="col-sm-6">
+                <img class="img-responsive g-w-100" src="images/pli-img01澶囦唤 17.png" alt="First slide">
             </div>
         </div>
     </div>
+</div>
 
 
+<div class="container">
+    <div id="carouselExampleControls3" class="carousel slide g-my-110" data-ride="carousel">
+        <div class="careChoose g-mb-40">
+            <h3 class="g-mb-0 pull-left g-font-size-22 g-color-gray-dark-v2">小食類/乾貨</h3>
+            <div class="pull-right">
+                <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls3" role="button" data-slide="prev">
+                    <i class="fa fa-angle-left" aria-hidden="true"></i>
+                </a>
+                <a class="carousel-control-next text-center" href="#carouselExampleControls3" role="button" data-slide="next">
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </a>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <div class="row">
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 3.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <h4 class="card-title  g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
+                            </a>
+
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
+                        <div class="cardInfo">
+                            <a class="img_wap" href="">
+                                <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 18.png" alt="First slide">
+                            </a>
+                            <div class="card-body text-center g-pb-35 g-px-16">
+                                <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
+                                <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
+                                <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer class="g-bg-gray text-center g-height-90 footerInfo g-py-24-md">
     <div class="container">
-        <div id="carouselExampleControls3" class="carousel slide g-my-110" data-ride="carousel">
-            <div class="careChoose g-mb-40">
-                <h3 class="g-mb-0 pull-left g-font-size-22 g-color-gray-dark-v2">小食類/乾貨</h3>
-                <div class="pull-right">
-                    <a class="carousel-control-prev text-center g-mr-12" href="#carouselExampleControls3" role="button" data-slide="prev">
-                        <i class="fa fa-angle-left" aria-hidden="true"></i>
-                    </a>
-                    <a class="carousel-control-next text-center" href="#carouselExampleControls3" role="button" data-slide="next">
-                        <i class="fa fa-angle-right" aria-hidden="true"></i>
-                    </a>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <div class="row">
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 3.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <h4 class="card-title  g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 16.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 2.png" alt="First slide">
-                                </a>
-
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-xs-6 col-md-3 g-mb-40--md">
-                            <div class="cardInfo">
-                                <a class="img_wap" href="">
-                                    <img class="card-img-top figure-img d-block mb-0" src="images/pli-img01澶囦唤 18.png" alt="First slide">
-                                </a>
-                                <div class="card-body text-center g-pb-35 g-px-16">
-                                    <h4 class="card-title g-font-family-Regular g-mt-30"><a class="productName" href="javascript:void(0)">爆红人气星空燦爛椰子燕窩</a></h4>
-                                    <h3 class="g-font-size-18 g-mb-20 g-mt-14 g-font-family-bold productPrice">$300.00</h3>
-                                    <a href="javascript:void(0)" class="shoppingBtn"><img class="d-inline-block" src="images/blackShopping.png" alt=""/></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="g-font-size-14 g-color-gray-dark-v5 text-center text-left--lg g-mt-8 g-mb-16--md">
+                    <a class="g-color-gray-dark-v5" href="">隱私條款</a>|<a class="g-color-gray-dark-v5" href="">條款及細則</a>| 2019 ◎啖啖燕窩有限公司x青商連線x香港人撐香港品牌
                 </div>
             </div>
-
+            <div class="col-lg-6">
+                <div class="parIcon text-center text-right--lg">
+                    <a href=""><img src="images/card_alipay_hk.png" alt=""/></a>
+                    <a href=""><img class="g-px-28" src="images/card_fps.png" alt=""/></a>
+                    <a href=""><img src="images/card_payme.png" alt=""/></a>
+                </div>
+            </div>
         </div>
     </div>
-    <footer class="g-bg-gray text-center g-height-90 footerInfo g-py-24-md">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="g-font-size-14 g-color-gray-dark-v5 text-center text-left--lg g-mt-8 g-mb-16--md">
-                        <a class="g-color-gray-dark-v5" href="">隱私條款</a>|<a class="g-color-gray-dark-v5" href="">條款及細則</a>| 2019 ◎啖啖燕窩有限公司x青商連線x香港人撐香港品牌
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="parIcon text-center text-right--lg">
-                        <a href=""><img src="images/card_alipay_hk.png" alt=""/></a>
-                        <a href=""><img class="g-px-28" src="images/card_fps.png" alt=""/></a>
-                        <a href=""><img src="images/card_payme.png" alt=""/></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
+</footer>
 
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="js/jquery.min.js"></script>
+
 <script src="js/bootstrap.min.js"></script>
 <script src="js/main.js"></script>
 
@@ -681,4 +698,3 @@
 
 </body>
 </html>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
