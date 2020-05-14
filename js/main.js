@@ -132,9 +132,6 @@ $(document).ready(function() {
 
 
 
-
-
-
     var btnCar = document.querySelectorAll('.shoppingBtn');
     //console.log(btnCar[0]);
     // 载入所有存储在localStorage的数据
@@ -147,7 +144,13 @@ $(document).ready(function() {
             var goods = document.getElementsByClassName('productName')[i].innerHTML;
             //console.log(goods);
             var price = document.getElementsByClassName('productPrice')[i].innerHTML;
-
+            var pid = $(this).parent().parent().attr("pid");
+            data={
+                "productImg":productImg,
+                "goods":goods,
+                'price':price,
+                'pid':pid
+            }
 
             //console.log(price);
             localStorage.setItem('img',productImg);
