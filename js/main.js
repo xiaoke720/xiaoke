@@ -156,7 +156,8 @@ $(document).ready(function() {
     }
 
     function loadAll() {
-        var list = document.getElementById("shoppingList");
+        //var list = document.getElementById("shoppingList");
+        var list = $("#shoppingList");
         if (localStorage.length > 0) {
             //var result = "<table border='1'>";
             //result += "<tr><th>商品</th><th>价格</th><th>操作</th></tr>";
@@ -165,31 +166,34 @@ $(document).ready(function() {
                 var goods = localStorage.getItem("goods");
                 var productImg = localStorage.getItem('img');
                 //console.log(productImg)
-                //result += "<tr><td>" + goods + "</td><t-d>" + price + "</td>" +
-                //    "<td><a href='javascript:;' id='del'>X</a></td></tr>";
                 result=
-
-                            '<div class="miniCart-left"><img src="'+productImg+'" alt="" /></div>'+
-                            '<div class="miniCart-right">' +
-                                 '<h4 class="card-title g-font-family-Regular g-line-height-21"><a href="">'+goods+'</a></h4>'+
-                                 '<div class="priceAndNumber g-mt-15">' +
-                                     '<h3 class="g-font-size-18 g-font-family-bold pull-left">'+price+'</h3>'+
-                                     '<div class="input-group-add pull-right text-center">'+
-                                         '<a class="jianshao" href="javascript:void(0)" href="">-</a>'+
-                                         '<span type="text" class="text-center g-color-gray-dark-v4 two g-font-size-12 number" placeholder="1" aria-describedby="sizing-addon2">1</span>'+
-                                         '<a class="add1" href="javascript:void(0)">+</a>'+
-                                     '</div>'+
-                                '</div>'+
-                            '</div>';
+                    $(
+                        '<li>'+
+                        '<button type="button" class="close closeBtn" aria-label="Close"><span aria-hidden="true">&times;</span></button>'+
+                        '<div class="clearfix"></div>'+
+                        '<article class="clearfix miniCartInfo"  id="shoppingList">'+
+                        '<div class="miniCart-left"><img src="'+productImg+'" alt="" /></div>'+
+                        '<div class="miniCart-right">' +
+                        '<h4 class="card-title g-font-family-Regular g-line-height-21"><a href="">'+goods+'</a></h4>'+
+                        '<div class="priceAndNumber g-mt-15">' +
+                        '<h3 class="g-font-size-18 g-font-family-bold pull-left">'+price+'</h3>'+
+                        '<div class="input-group-add pull-right text-center">'+
+                        '<a class="jianshao" href="javascript:void(0)" href="">-</a>'+
+                        '<span type="text" class="text-center g-color-gray-dark-v4 two g-font-size-12 number" placeholder="1" aria-describedby="sizing-addon2">1</span>'+
+                        '<a class="add1" href="javascript:void(0)">+</a>'+
+                        '</div>'+
+                        '</div>'+
+                        '</div>'+
+                        '</article>'+
+                        '</li>'
+                    )
 
             }
             //console.log(typeof(result));
-
-            list.innerHTML = result;
-            console.log(list.innerHTML);
-
+            list.append(result);
         } else {
-            list.innerHTML = "购物车空空如也哦……";
+            //list.append("购物车空空如也哦");
+            //list.innerHTML = "购物车空空如也哦……";
         }
 
     }
