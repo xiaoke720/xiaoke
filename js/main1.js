@@ -147,8 +147,6 @@ $(document).ready(function() {
             var goods = document.getElementsByClassName('productName')[i].innerHTML;
             //console.log(goods);
             var price = document.getElementsByClassName('productPrice')[i].innerHTML;
-
-
             //console.log(price);
             localStorage.setItem('img',productImg);
             localStorage.setItem('price',price);
@@ -161,6 +159,8 @@ $(document).ready(function() {
         //var list = document.getElementById("shoppingList");
         var list = $("#shoppingList");
         if (localStorage.length > 0) {
+            //var result = "<table border='1'>";
+            //result += "<tr><th>商品</th><th>价格</th><th>操作</th></tr>";
             for (var i = 0; i < localStorage.length; i++) {
                 var price = localStorage.getItem("price");
                 var goods = localStorage.getItem("goods");
